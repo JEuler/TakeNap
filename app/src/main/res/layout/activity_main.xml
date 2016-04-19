@@ -11,45 +11,39 @@
     tools:context="com.cloverrepublic.takenap.MainActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="test"
-        android:text="тест" />
-
-    <Button
+        android:id="@+id/min15_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="on15MinClick"
         android:text="15 минут" />
 
     <Button
+        android:id="@+id/min30_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="on30MinClick"
         android:text="30 минут" />
 
     <Button
+        android:id="@+id/min45_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="on45MinClick"
         android:text="45 минут" />
 
     <Button
+        android:id="@+id/min60_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="on60MinClick"
         android:text="1 час" />
 
     <Button
+        android:id="@+id/minCustom_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onCustomClick"
         android:text="Своё время" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
     <Button
         android:id="@+id/stop_timer"
@@ -57,6 +51,11 @@
         android:layout_height="wrap_content"
         android:onClick="onStopClick"
         android:text="Остановить" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <Button
         android:layout_width="match_parent"
@@ -67,5 +66,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onOtherAppsClick"
         android:text="Другие приложения" />
 </LinearLayout>
